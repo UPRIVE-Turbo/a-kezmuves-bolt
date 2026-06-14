@@ -1,0 +1,40 @@
+{
+  "project": {
+    "name": "A Kézműves Bolt",
+    "slug": "a-kezmuves-bolt",
+    "language": "hu"
+  },
+  "business": {
+    "name": "A Kézműves Bolt",
+    "industry": "Kézműves/Ajándékbolt",
+    "city": "Veszprém",
+    "tier": "Tier 1",
+    "contact": {
+      "phone": null,
+      "email": null,
+      "address": "Virág Benedek u. 3, Veszprém",
+      "facebook": "https://www.facebook.com/akezmuves.bolt",
+      "instagram": null
+    }
+  },
+  "design": {
+    "colors": {
+      "primary": "#B5673E",
+      "background": "#F4EFE5"
+    },
+    "fonts": {
+      "heading": "Bitter",
+      "body": "Inter"
+    }
+  },
+  "sections": [
+    "hero",
+    "services",
+    "about",
+    "gallery",
+    "booking-form",
+    "contact",
+    "footer"
+  ],
+  "full_prompt": "Készíts egy magyar nyelvű, egyoldalas landing page-et egy kézműves/ajándékboltnak:\n\nAZ ÜZLET ADATAI:\n- Név: A Kézműves Bolt\n- Cím: Virág Benedek u. 3, Veszprém\n- Facebook: facebook.com/akezmuves.bolt\n- Profil: Kézműves termékek, ajándékok, kézműves workshopok\n\nDESIGN:\n- Stílus: Meleg, természetes, kézműves, otthonos\n- Színek: Terrakotta (#B5673E) fejlécekhez, olívazöld (#7A8B5A) kiemelésekhez, krém (#F4EFE5) háttérhez, sötétbarna (#3E2E24) szöveghez\n- Betűtípus: Barátságos serif címekhez (pl. Bitter), sans-serif szöveghez\n\nFELÉPÍTÉS (egyetlen görgethető oldal):\n1. Hero szekció: \"A Kézműves Bolt — Veszprém\", szlogen (\"Kézzel készült, szívvel adott\"), CTA: \"Kapcsolat\"\n2. Kínálatunk: Kézműves termékek, ajándékok, alapanyagok — rövid leírás\n4. Galéria: 6-8 kép placeholder (termékek, workshopok)\n5. Kapcsolat űrlap: Név, telefon, email, , üzenet\n6. Elérhetőség: Cím, nyitvatartás, Google Maps\n7. Lábléc: Facebook, cím, © 2026\n\nHANGNEM: Meleg, kreatív, közösségi.\n\nTECHNIKAI: Mobilbarát, reszponzív."
+}
