@@ -7,13 +7,14 @@ export const Gallery: CollectionConfig = {
     plural: 'Galéria',
   },
   admin: {
+    group: 'Tartalom',
     useAsTitle: 'alt',
-    defaultColumns: ['image', 'alt', 'order'],
+    defaultColumns: ['image', 'alt'],
   },
   access: {
     read: () => true,
   },
-  defaultSort: 'order',
+  orderable: true,
   fields: [
     {
       name: 'image',
@@ -27,12 +28,6 @@ export const Gallery: CollectionConfig = {
       type: 'text',
       label: 'Alt szöveg',
       required: true,
-    },
-    {
-      name: 'order',
-      type: 'number',
-      label: 'Sorrend',
-      defaultValue: 0,
     },
   ],
 }

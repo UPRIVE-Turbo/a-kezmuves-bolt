@@ -7,6 +7,7 @@ export const Submissions: CollectionConfig = {
     plural: 'Beküldések',
   },
   admin: {
+    group: 'Megkeresések',
     useAsTitle: 'name',
     defaultColumns: ['name', 'phone', 'email', 'service', 'createdAt'],
   },
@@ -41,6 +42,10 @@ export const Submissions: CollectionConfig = {
       name: 'date',
       type: 'date',
       label: 'Időpont',
+      admin: {
+        description: 'A kért időpont, ha a megkeresés foglaláshoz kapcsolódik.',
+        position: 'sidebar',
+      },
     },
     {
       name: 'message',

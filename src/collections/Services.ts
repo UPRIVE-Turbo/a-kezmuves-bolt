@@ -7,13 +7,14 @@ export const Services: CollectionConfig = {
     plural: 'Szolgáltatások',
   },
   admin: {
+    group: 'Tartalom',
     useAsTitle: 'name',
-    defaultColumns: ['name', 'price', 'order'],
+    defaultColumns: ['name', 'price', 'image'],
   },
   access: {
     read: () => true,
   },
-  defaultSort: 'order',
+  orderable: true,
   fields: [
     {
       name: 'name',
@@ -34,7 +35,19 @@ export const Services: CollectionConfig = {
     {
       name: 'icon',
       type: 'text',
-      label: 'Ikon (pl. Phosphor ikon neve)',
+      label: 'Ikon',
+      admin: {
+        description: 'Egyik a következők közül: gift, palette, scissors, package.',
+      },
+    },
+    {
+      name: 'image',
+      type: 'upload',
+      relationTo: 'media',
+      label: 'Kép',
+      admin: {
+        description: 'A szolgáltatás mellett megjelenő kép.',
+      },
     },
     {
       name: 'highlights',
@@ -43,12 +56,6 @@ export const Services: CollectionConfig = {
       admin: {
         description: 'Soronként egy rövid kiemelés, amelyek felsorolásként jelennek meg a kártyán.',
       },
-    },
-    {
-      name: 'order',
-      type: 'number',
-      label: 'Sorrend',
-      defaultValue: 0,
     },
   ],
 }
